@@ -1,38 +1,60 @@
-<html>
+<html lan="pt-br">
   <style>
+	/*Estilo padrao*/
     *
 	{
 	  margin: 0px;
 	  padding: 0px;
 	}
-	#header
+	div#header 
 	{
-	  background-color:#888;
+		text-align:center;
+		padding: 15px;
 	}
-	#menu
+	div#header h1
 	{
-	  background-color:#bbb;
-	}
-	#conteudo
-	{
-	  background-color:#eee;
+		font-size: 48px;
 	}
 	
+	/*Permite que o menu acompanhe a leitura do usuário*/
+	nav#menu
+	{
+		position: -webkit-sticky;
+		top: 0; 
+		position: sticky;
+		font-size: 30px;
+	}
+
+nav#menu ul{
+	list-style-type:none;
+	overflow:hidden;
+	background-color:#333;
+	}
+nav#menu ul li{float:left}
+nav#menu ul li a{display:block;color:white;text-align:center;text-decoration:none;padding:14px 16px;}
+nav#menu ul li a:hover{background-color:#111;}
+
+	div#conteudo{height:10000px;}
+
   </style>
   <head>
+	<meta charset="UTF-8">
     <title>Projeto Palmas</title>
   </head>
   <body>
-    <div id="tudo">
-      <div id="header"> 
-	  HEADER
-	  </div>
-	  <div id="menu">
-	  MENU
-	  </div>
-	  <div id="conteudo">
-	  <p>CONTEUDO</p>
-	  </div>
+	<div id="header">
+		<h1>Palmas</h1>
+		<p> A capital da fé</p>
+	</div>
+	<nav id="menu">
+		<ul>
+			<li><a href="#a">Abracadabra</a></li>
+			<li><a href="#b">Brasil</a></li>
+			<li><a href="#c">Casa Branca</a></li>
+		</ul>
+	</nav>
+
+	<div id="conteudo">
 	</div>
   </body>
 </html>
